@@ -1,0 +1,70 @@
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+.content {
+    padding-right: 50%; 
+}
+
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; 
+}
+
+.quote {
+    font-size: 24px;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.buttons button {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #777;
+}
+
+/* Responsive typography */
+@media (min-width: 768px) {
+    .quote {
+        font-size: 2rem;
+    }
+}
