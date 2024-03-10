@@ -1,70 +1,74 @@
-body, h1, h2, h3, h4, h5, h6, p, ul {
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    line-height: 1.6;
+}
+
+.logo {
+    width: 150px; 
+    height: auto; 
 }
 
 header {
-    background-color: #333;
-    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
+header h1 {
+    margin-top: 10px;
 }
 
-nav ul li {
-    padding: 10px 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-.content {
-    padding-right: 50%; 
-}
-
-
-.quote-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80vh; 
-}
-
-.quote {
-    font-size: 24px;
+header h2 {
     margin-bottom: 20px;
-    max-width: 600px;
+    font-weight: normal;
+    color: #333;
 }
 
-.buttons button {
-    background-color: #555;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 20px;
-    cursor: pointer;
+.mission, .ticket-packages, .guest-speakers {
+    padding: 20px;
 }
 
-.buttons button:hover {
-    background-color: #777;
+.mission p, .ticket-packages ul, .guest-speakers .month {
+    margin-bottom: 20px;
 }
 
-/* Responsive typography */
-@media (min-width: 768px) {
-    .quote {
-        font-size: 2rem;
-    }
+blockquote {
+    border-left: 4px solid #555;
+    padding-left: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.ticket-packages ul {
+    list-style-type: none;
+}
+
+.ticket-packages li {
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.guest-speakers .speaker {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.guest-speakers .speaker img {
+    max-width: 80px; /* Replace with actual size of your speaker image */
+    margin-right: 20px;
+    border-radius: 50%; /* Circular image */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
 }
